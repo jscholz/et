@@ -1,0 +1,21 @@
+kibbutz.lisp
+
+This program keeps track of shared expenses for group of people and will
+calculate debt or credit of each individual.
+
+Lazy Instructions:
+- Add your expense or payment to "account.sexp" following the syntax and
+  conventions therein.
+- run `run-account.sh' to display the debt list
+- write a check
+- commit the updated account.sexp file
+
+Bugs:
+- Does not account for inflation/interest rates
+- SBCL doesn't seem to follow the standard 2-decimal-places for the ~$ format
+  specifier
+- Need to calculate repayments instead of just debts.  This seems NP-hard,
+  though.
+
+Authors:
+- Neil Dantam

@@ -1,0 +1,8 @@
+#!/bin/bash
+if [ -z "$1" ]; then FILE=1101.lisp ; else FILE=$1; fi
+sbcl --noinform --noprint <<HERE 
+(load "et.lisp")
+(run-file-pool "$FILE")
+(sb-ext:quit)
+HERE
+
